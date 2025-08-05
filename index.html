@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<!-- Last Published: Mon Jul 28 2025 20:53:49 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="wallarm.webflow.io" 
+      data-wf-page="686264819642242e9ff93c31" 
+      data-wf-site="5fe3434623c64c793987363d" 
+      lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Replace Akamai & Cut CDN Costs with Wallarm + AWS CloudFront</title>
+    
+    <!-- Alternate language links -->
+    <link rel="alternate" hreflang="x-default" href="https://www.wallarm.com/akamai-aws">
+    <link rel="alternate" hreflang="en" href="https://www.wallarm.com/akamai-aws">
+    <link rel="alternate" hreflang="ja" href="https://www.wallarm.com/jp/akamai-aws">
+    
+    <!-- Meta descriptions -->
+    <meta content="Wallarm Security Edge with AWS CloudFront delivers advanced API protection for GraphQL, gRPC, and WebSocket traffic—while cutting CDN costs and eliminating egress fees." 
+          name="description">
+    
+    <!-- Open Graph meta tags -->
+    <meta content="Replace Akamai & Cut CDN Costs with Wallarm + AWS CloudFront" 
+          property="og:title">
+    <meta content="Wallarm Security Edge with AWS CloudFront delivers advanced API protection for GraphQL, gRPC, and WebSocket traffic—while cutting CDN costs and eliminating egress fees." 
+          property="og:description">
+    <meta content="images/6866bde2c024f5940b8377b5_OG-Akamai.png" 
+          property="og:image">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter meta tags -->
+    <meta content="Replace Akamai & Cut CDN Costs with Wallarm + AWS CloudFront" 
+          property="twitter:title">
+    <meta content="Wallarm Security Edge with AWS CloudFront delivers advanced API protection for GraphQL, gRPC, and WebSocket traffic—while cutting CDN costs and eliminating egress fees." 
+          property="twitter:description">
+    <meta content="https://cdn.prod.website-files.com/5fe3434623c64c793987363d/6866bde2c024f5940b8377b5_OG-Akamai.png" 
+          property="twitter:image">
+    <meta content="summary_large_image" name="twitter:card">
+    
+    <!-- Viewport and verification -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="cgfLV9nrfJxP_J7lykt0mLFX0YKoO8ZaSI-q10FOSbA" name="google-site-verification">
+    <meta name="facebook-domain-verification" content="w348sy42omiyv2bdr72l8qezk7gmjf">
+    
+    <!-- Stylesheets -->
+    <link href="css/wallarm.shared.63d00ecd3.min.css" rel="stylesheet" type="text/css">
+    <link href="css/wallarm.686264819642242e9ff93c31-0132228f6.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Font preconnects -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+    
+    <!-- Scripts -->
+    <script src="js/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Inter Tight:regular,700", "Inter Tight:regular,500,600,700,800,900"]
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        !function(o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js";
+            ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    
+    <!-- Favicons -->
+    <link href="images/68640b515d77f72a69d84e44_fav.png" rel="shortcut icon" type="image/x-icon">
+    <link href="images/68238aadbcc599e07f102b99_fav-icon.png" rel="apple-touch-icon">
+    
+    <!-- Canonical link -->
+    <link href="https://www.wallarm.com/akamai-aws" rel="canonical">
+    
+    <!-- Logo meta -->
+    <meta property="og:logo" 
+          content="https://assets.website-files.com/5fe3434623c64c793987363d/5fe35f4dbf861c75ba14e7d9_no-paddings-EN.svg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://www.schema.org",
+        "@type": "Organization",
+        "name": "Wallarm",
+        "url": "https://www.wallarm.com/",
+        "logo": "https://assets.website-files.com/5fe3434623c64c793987363d/5fe35f4dbf861c75ba14e7d9_no-paddings-EN.svg",
+        "image": "https://assets.website-files.com/5fe3434623c64c793987363d/60125dc6b09effe9f6100880_scheme-final-2.png",
+        "description": "Wallarm Security Platform\n",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "415 Brannan St. 2nd FL",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94107",
+            "addressCountry": "United States"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "(415) 940-7077"
+        },
+        "sameAs": [
+            "https://www.facebook.com/wallarm/",
+            "https://twitter.com/wallarm",
+            "https://www.wallarm.com/",
+            "https://github.com/wallarm",
+            "https://www.linkedin.com/company/wallarm",
+            "https://www.youtube.com/channel/UCgD4zSzAJwf3tBlOgJo7Qkw"
+        ]
+    }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .collection-list-wrapper-4 .w-dyn-item.w-col.w-col-4:nth-child(3n+4),
+        .collection-list-wrapper .w-dyn-item.w-col.w-col-4:nth-child(3n+4),
+        .collection-list-wrapper-3 .w-dyn-item.w-col.w-col-4:nth-child(3n+4) {
+            clear: left;
+        }
+        
+        .w-webflow-badge {
+            display: none !important;
+        }
+    </style>
+    
+    <!-- Tracking Script -->
+    <script>
+        window.tracking = window.tracking || {};
+        window.tracking.state = window.tracking.state || {};
+    </script>
+    
+    <!-- Mobile Menu Style -->
+    <style>
+        @media screen and (max-width: 991px) {
+            .mobile-menu.w--open {
+                max-height: calc(100vh - 220px) !important;
+            }
+        }
+        
+        /* Hide GDPR banner and other interactive elements for static demo */
+        #gdpr_banner_container,
+        .gdpr-block-2,
+        .hubspot-web-interactives-loader {
+            display: none !important;
+        }
+        
+        /* Hide horizontal footer layout and show vertical column layout */
+        .n-footer-links-wrapper {
+            display: none !important;
+        }
+        
+        .n-footer-links-vertical {
+            display: block !important;
+        }
+        
+        /* Force footer to display in 4-column layout */
+        .n-footer-links-vertical {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 1fr 1fr !important;
+            gap: 2rem !important;
+            width: 100% !important;
+        }
+        
+        .n-footer-column-wrapper {
+            display: block !important;
+        }
+        
+        /* Make Value section items visible by overriding opacity:0 from inline styles */
+        .div-block-510 {
+            opacity: 1 !important;
+            transform: translate3d(0, 0, 0) !important;
+            -webkit-transform: translate3d(0, 0, 0) !important;
+            -moz-transform: translate3d(0, 0, 0) !important;
+            -ms-transform: translate3d(0, 0, 0) !important;
+        }
+        
+        /* Disable footer link functionality */
+        .n-footer-link {
+            pointer-events: none !important;
+            cursor: default !important;
+        }
+        
+        /* Ensure buttons look clickable but don't redirect */
+        .w-button, button {
+            transition: opacity 0.2s ease;
+        }
+        
+        .w-button:hover, button:hover {
+            opacity: 0.8;
+        }
+        
+        /* Static demo notification */
+        .static-demo-notice {
+            background: #ff441c;
+            color: white;
+            text-align: center;
+            padding: 4px 8px;
+            font-size: 12px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            font-family: 'Inter Tight', sans-serif;
+        }
+    </style>
+    
+    <!-- Lazy Loading Script -->
+    <script>
+        !function() {
+            "use strict";
+            
+            function e() {
+                return window.scrollY > 40
+            }
+            
+            function n(n) {
+                if (e()) {
+                    n();
+                } else {
+                    var t = !1;
+                    document.addEventListener("scroll", (function() {
+                        !t && e() && (n(), t = !0)
+                    }))
+                }
+            }
+            
+            window.lazyLoadScript = function(e) {
+                n((function() {
+                    !function(e) {
+                        var n = document.createElement("script");
+                        n.async = !0;
+                        n.defer = !0;
+                        n.src = e;
+                        n.type = "text/javascript";
+                        document.head.appendChild(n)
+                    }(e)
+                }))
+            };
+            
+            window.lazyLoadIframe = function(e, t) {
+                n((function() {
+                    var n = document.getElementById(t),
+                        c = document.createElement("iframe");
+                    c.src = e;
+                    c.width = "100%";
+                    c.loading = "lazy";
+                    c.frameBorder = "0";
+                    c.scrolling = "0";
+                    c.classList.add("whats_template_iframe");
+                    n.appendChild(c)
+                }))
+            };
+            
+            window.lazyLoadCss = function(e) {
+                n((function() {
+                    var n, t;
+                    n = e;
+                    (t = document.createElement("link")).href = n;
+                    t.rel = "stylesheet";
+                    t.type = "text/css";
+                    document.head.prepend(t)
+                }))
+            }
+        }();
+    </script>
+    
+    <!-- External Script -->
+    <script src="js/e5962cb9da934e519cb017e2812b5531.min.js" 
+            crossorigin="anonymous" 
+            async="">
+    </script>
+</head>
+
+<body>
+    <!-- Static Demo Notice -->
+    <div class="static-demo-notice">
+        📋 Static Landing Page Demo - Buttons are disabled for presentation purposes
+    </div>
+    
+    <div class="n-page-wrapper">
+        
+        <!-- Global Styles -->
+        <div bind="ff5a7e74-d4a2-7b46-dcac-206016bd811d" class="n-global-styles w-embed">
+            <style>
+                /* use css unminify */
+                .text-style-2lines, .text-style-3lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                }
+                
+                .padding-0, .spacing-clean {
+                    padding: 0 !important;
+                }
+                
+                .margin-bottom, .margin-horizontal, .margin-left, .margin-right, 
+                .w-richtext>:not(div):first-child, 
+                .w-richtext>div:first-child>:first-child {
+                    margin-top: 0 !important;
+                }
+                
+                .margin-horizontal, .margin-left, .margin-right, .margin-top, 
+                .w-richtext ol li:last-child, .w-richtext ul li:last-child, 
+                .w-richtext>:last-child {
+                    margin-bottom: 0 !important;
+                }
+                
+                .padding-bottom, .padding-horizontal, .padding-left, .padding-right {
+                    padding-top: 0 !important;
+                }
+                
+                .padding-horizontal, .padding-left, .padding-right, .padding-top {
+                    padding-bottom: 0 !important;
+                }
+                
+                .padding-bottom, .padding-left, .padding-top, .padding-vertical {
+                    padding-right: 0 !important;
+                }
+                
+                .padding-bottom, .padding-right, .padding-top, .padding-vertical {
+                    padding-left: 0 !important;
+                }
+                
+                body {
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-smoothing: antialiased;
+                    text-rendering: optimizeLegibility;
+                }
+                
+                [tabindex]:focus-visible, input[type=file]:focus-visible {
+                    outline: #4d65ff solid .125rem;
+                    outline-offset: 0.125rem;
+                }
+                
+                .pointer-events-off {
+                    pointer-events: none;
+                }
+                
+                .pointer-events-on {
+                    pointer-events: auto;
+                }
+                
+                .div-square::after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
+                
+                .container-large, .container-medium, .container-small {
+                    margin-right: auto !important;
+                    margin-left: auto !important;
+                }
+                
+                .margin-bottom, .margin-left, .margin-top, .margin-vertical {
+                    margin-right: 0 !important;
+                }
+                
+                .margin-0, .spacing-clean {
+                    margin: 0 !important;
+                }
+                
+                .margin-bottom, .margin-right, .margin-top, .margin-vertical {
+                    margin-left: 0 !important;
+                }
+                
+                .text-style-3lines {
+                    -webkit-line-clamp: 3;
+                }
+                
+                .text-style-2lines {
+                    -webkit-line-clamp: 2;
+                }
+                
+                .display-inlineflex {
+                    display: inline-flex;
+                }
+                
+                .hide {
+                    display: none !important;
+                }
+                
+                @media screen and (max-width: 991px) {
+                    .hide, .hide-tablet {
+                        display: none !important;
+                    }
+                }
+                
+                @media screen and (max-width: 767px) {
+                    .hide-mobile-landscape {
+                        display: none !important;
+                    }
+                }
+                
+                @media screen and (max-width: 479px) {
+                    .hide-mobile {
+                        display: none !important;
+                    }
+                }
+            </style>
+        </div>
+        
+        <!-- Header -->
+        <div class="aasm-header n-padding-global agaist-ato">
+            <div class="aasm-header-container">
+                
+                <!-- Logo -->
+                <div class="n-header-logo-wrapper w-nav-brand" style="cursor: default;">
+                    <div bind="a08f7420-2d41-dab5-6ffc-81839ffd7199" class="n-header-logo w-embed">
+                        <svg width="134" height="25" viewBox="0 0 134 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                                  d="M56.4196 6.05069H58.872L61.9374 15.2442L64.3898 6.05069H67.4552L63.1636 19.5387H60.7112L57.6458 10.3423L54.5804 19.5387H52.1281L47.8364 6.05069H50.9019L53.3542 15.2442L56.4196 6.05069ZM72.5263 17.53C74.5333 17.53 76.0385 16.4007 76.0385 14.7437V13.9156C75.2609 13.6144 74.1819 13.3883 73.0027 13.3883C71.0959 13.3883 69.967 14.166 69.967 15.5216V15.5725C69.967 16.8273 71.0959 17.53 72.5263 17.53ZM69.2945 6.74473C70.4151 6.34016 71.6594 6.08352 73.2834 6.08352C77.1971 6.08352 79.1039 8.0296 79.1039 11.5685V19.5387H76.0385V17.9072C75.1351 18.9857 73.8105 19.8144 71.8032 19.8144C69.2945 19.8144 67.0869 18.3838 67.0869 15.7228V15.6732C67.0869 12.8111 69.3703 11.405 72.4559 11.405C74.0614 11.405 75.0099 11.6312 76.0385 11.9574V11.6312C76.0385 9.79864 74.9644 8.79449 72.8571 8.79449C71.4835 8.79449 70.4011 9.07791 69.2945 9.51923V6.74473ZM80.9431 19.5387V1.146H84.0085V19.5387H80.9431ZM85.8479 19.5387V1.146H88.9133L88.9745 19.5387H85.8479ZM95.8236 17.53C97.8306 17.53 99.3358 16.4007 99.3358 14.7437V13.9156C98.5583 13.6144 97.4792 13.3883 96.3 13.3883C94.3932 13.3883 93.2643 14.166 93.2643 15.5216V15.5725C93.2643 16.8273 94.3932 17.53 95.8236 17.53ZM92.5918 6.74473C93.7123 6.34016 94.9567 6.08352 96.5807 6.08352C100.494 6.08352 102.401 8.0296 102.401 11.5685V19.5387H99.3358V17.9072C98.4324 18.9857 97.1078 19.8144 95.1005 19.8144C92.5918 19.8144 90.3842 18.3838 90.3842 15.7228V15.6732C90.3842 12.8111 92.6676 11.405 95.7531 11.405C97.3587 11.405 98.3072 11.6312 99.3358 11.9574V11.6312C99.3358 9.79864 98.2618 8.79449 96.1544 8.79449C94.7808 8.79449 93.6984 9.07791 92.5918 9.51923V6.74473ZM104.24 19.5387V6.05069H107.306V9.0377C108.134 7.05476 109.627 5.69914 111.96 5.79961V9.01277H111.784C109.125 9.01277 107.306 10.7443 107.306 14.2588V19.5387H104.24ZM133.668 10.8449V19.5387H130.603V11.9476C130.603 9.83895 129.655 8.53581 127.949 8.53581C126.293 8.53581 125.085 9.81359 125.085 11.9476V19.5387H122.019V11.7489C122.019 9.69004 121.074 8.53581 119.393 8.53581C117.713 8.53581 116.502 9.88881 116.502 11.9476V19.5387H113.437V6.05069H116.502V8.05861C117.356 6.87877 118.566 5.77422 120.599 5.77422C122.505 5.77422 123.835 6.70299 124.537 8.1083C125.615 6.70299 127.02 5.77422 129.027 5.77422C131.912 5.77422 133.668 7.60704 133.668 10.8449Z" 
+                                  fill="white"></path>
+                            <path d="M0 7.0407L16.5868 0L16.5868 10.0159L31.9065 3.51305L31.9065 11.5489L40.0855 8.07713V13.7797L31.9065 17.2515L31.9065 14.2054L16.5709 20.7149V16.0239L0 23.0578V7.0407Z" 
+                                  fill="#FF441C"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <div class="div-block-422 cust is-hidden-mob-2">
+                    <button gtm-trigger-name="WALLARMCOM_AKAMAI_AWS_HEAD_FREE_TIER" 
+                       id="w-node-cb416985-9f57-e00d-af25-22853d577d09-9ff93c31" 
+                       class="n-button-navbar-4 is-orange w-button" 
+                       style="cursor: pointer; border: none; outline: none;">Use for free</button>
+                    <button gtm-trigger-name="WALLARMCOM_AKAMAI_AWS_HEAD_SALES" 
+                       class="n-button-navbar-4 w-button" 
+                       style="cursor: pointer; border: none; outline: none;">Talk to sales</button>
+                </div>
+                
+            </div>
+        </div><div><div id="gdpr_banner_container" class="gdpr-block-2 full-settings-hidden"><div class="gdpr-block-background"><div class="gdpr-block-images"><div bind="060e72fc-092f-c0aa-1d48-1b3f0cd6f2a7" class="hidden w-embed"><style>
+.gdpr-block-images {
+    display: block;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-image: url('images/62d85ba1744e6485d7816e4f_Group%204689.svg'), url('images/62d85bee4a84633e8b5a3506_gdpr_ii.svg');
+    background-position: 50% 70%, 0 10%;
+}
+</style></div></div></div><div id="gdpr_banner_close" class="gdpr-block-close"><img src="images/62d9b64800a8aa79427fc535_small.svg" loading="eager" width="16" height="16" alt="Close" class="gdpr-block-close-image"></div><div class="gdpr-block-content-wrapper"><div class="gdpr-block-title-wripper"><div class="gdpr-block-title-2">Privacy settings</div></div><div id="w-node-e2f21b96-c591-ec27-5f1a-4ffcce1e3dcd-ce1e3dc2" class="gdpr-block-empty"></div><div id="w-node-e2f21b96-c591-ec27-5f1a-4ffcce1e3dce-ce1e3dc2" class="gdpr-block-content"><div class="gdpr-block-paragraf">We use cookies and similar technologies that are necessary to run the website. Additional cookies are only used with your consent. You can consent to our use of cookies by clicking on Agree. For more information on which data is collected and how it is shared with our partners please read our privacy and cookie policy: <a href="/cookie-policy" class="gdpr-block-inline-link">Cookie policy</a>, <a href="/privacy-policy" class="gdpr-block-inline-link">Privacy policy</a></div><div class="gdpr-block-controls-full n-hidden"><div class="gdpr-block-paragraf">We use cookies to access, analyse and store information such as the characteristics of your device as well as certain personal data (IP addresses, navigation usage, geolocation data or unique identifiers). The processing of your data serves various purposes: Analytics cookies allow us to analyse our performance to offer you a better online experience and evaluate the efficiency of our campaigns. Personalisation cookies give you access to a customised experience of our website with usage-based offers and support. Finally, Advertising cookies are placed by third-party companies processing your data to create audiences lists to deliver targeted ads on social media and the internet. You may freely give, refuse or withdraw your consent at any time using the link provided at the bottom of each page.</div><div class="gdpr-block-controls-wrapper"><div bind="060e72fc-092f-c0aa-1d48-1b3f0cd6f2bb" class="gdpr-block-form w-form"><form id="wf-form-Consent-form-2" name="wf-form-Consent-form-2" data-name="Consent form" method="get" data-wf-page-id="686264819642242e9ff93c31" data-wf-element-id="e2f21b96-c591-ec27-5f1a-4ffcce1e3ddb"><label class="w-checkbox gdpr-block-form-row gdpr-block-form-row-checkbox"><input type="checkbox" name="analytics" id="gdpr_analytics_checkbox" data-name="analytics" class="w-checkbox-input gdpr-block-form-checkbox-input"><span class="gdpr-block-form-checkbox-label w-form-label" for="analytics">Analytics</span></label><ul role="list" class="gdpr-block-form-list-advantages"><li>Monitor website traffic and optimize your user experience</li><li>Evaluate which marketing channels are performing better</li><li>Analyse aggregated data about usage of the website to understand our customers. Randomized identifiers shared with partners.</li></ul><label class="w-checkbox gdpr-block-form-row gdpr-block-form-row-checkbox"><input type="checkbox" name="personalization" id="gdpr_personalization_checkbox" data-name="personalization" class="w-checkbox-input gdpr-block-form-checkbox-input"><span class="gdpr-block-form-checkbox-label w-form-label" for="personalization">Personalization</span></label><ul role="list" class="gdpr-block-form-list-advantages"><li>Store your preferences from previous visits</li><li>Collect user feedback to improve our website</li><li>Evaluate your interests to provide you unique customised content and offers</li></ul><label class="w-checkbox gdpr-block-form-row gdpr-block-form-row-checkbox"><input type="checkbox" name="advertising" id="gdpr_advertising_checkbox" data-name="advertising" class="w-checkbox-input gdpr-block-form-checkbox-input"><span class="gdpr-block-form-checkbox-label w-form-label" for="advertising">Advertising</span></label><ul role="list" class="gdpr-block-form-list-advantages"><li>Make online and social advertising more relevant for you</li><li>Invite specific customer groups to reconnect with our products later</li><li>Share data with our advertising and social media partners via their third-party cookies to match your interests</li></ul></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div><div id="w-node-e2f21b96-c591-ec27-5f1a-4ffcce1e3e03-ce1e3dc2" class="gdpr-block-quick-controls"><a id="gdpr_block_reject_all" href="#" class="gdpr-block-control gdpr-block-control-reject">Reject All</a><div class="gdpr-block-links"><a href="#" class="gdpr-block-link gdpr-block-link-cookie-settings-phone gdpr_settings_full">Cookie Settings</a><a href="#" class="gdpr-block-link gdpr-block-link-cookie-settings-desktop gdpr_settings_full">Cookie Settings</a></div><a href="#" id="gdpr_block_accept_all" class="cta-rimary-2 gdpr-block-control gdpr-block-control-accept w-button">Accept All</a><a href="#" id="gdpr_block_save_selection" class="cta-rimary-2 gdpr-block-control gdpr-block-control-save-selection w-button">Save Selection</a></div></div></div><div class="n-hide w-embed w-script"><script>
+(()=>{var e={142:e=>{var t=Array.isArray;e.exports=t}},t={};function n(o){var c=t[o];if(void 0!==c)return c.exports;var r=t[o]={exports:{}};return e[o](r,r.exports,n),r.exports}(()=>{"use strict";function e(e,t="debug"){"undefined"!=typeof Sentry&&"function"==typeof Sentry.captureMessage?Sentry.captureMessage(e):console?.info(e)}n(142);var t="; ",o=document.location.hostname.indexOf("localhost")>=0?"localhost":`.${document.location.hostname.split(".").slice(-2).join(".")}`;function c(e){return decodeURIComponent(((t+document.cookie).split(t+e+"=")[1]||"").split(t)[0])}function r({name:e,value:t,expires:n=0,path:c="/",subdomains:r,domain:i}){return document.cookie=e+"="+encodeURIComponent(t)+(n?"; expires="+new Date(Number(new Date)+1e3*n).toUTCString():"")+(c?"; path="+c:"")+(r?`; domain=${o}`:"")+(!r&&i?"; domain="+i:"")}const i="gdpr_banner_consent",s=31536e3,a=new Event("consentChangeEvent");function d(){return(new Date).toISOString().slice(0,10)}const l=d(),u="gdpr_banner_closed",m="gdpr_banner_container";function g(){document.getElementById(m).style.opacity="0",document.getElementById(m).style.transition="opacity 0.1s linear 0.1s",setTimeout((()=>{document.getElementById(m).style.display="none"}),150),r({name:u,value:!0,expires:s}),function(){try{e(`consentCloseBanner_${l}`)}catch(e){}}()}function p(){document.getElementById(m).style.display="block",document.getElementById(m).style.opacity="1",document.getElementById(m).style.transition="opacity 0.1s linear 0.1s",r({name:u,value:"",expires:-1})}function y(){document.querySelector(".gdpr-block-controls-full").classList.toggle("n-hidden"),document.getElementById(m).classList.toggle("full-settings-hidden")}const f=["analytics","personalization","advertising"],v="gdpr_block_accept_all",E="gdpr_block_save_selection",h=document.getElementById("wf-form-Consent-form-2"),k=document.getElementById(E),_=document.getElementById(v),I=new Event("rejectOrApproveChangeEvent"),w=d();function B(){k.style.display="inline-block",_.style.display="none"}function b(e){for(let t=0;t<f.length;t++){const n=f[t];try{document.getElementById(`gdpr_${n}_checkbox`).checked=e}catch(e){}}h.dispatchEvent(I)}const L=function(){var t,n,o,d;(function(e,t){const n=()=>{const e=function(e){const t=new FormData(e),n={};for(const e of t.keys())n[e]=t.get(e);return n}(h);t(e)};var o;h.addEventListener("change",B),o=n,k.addEventListener("click",o),e&&(function(e){for(let t=0;t<f.length;t++){const n=f[t];try{document.getElementById(`gdpr_${n}_checkbox`).checked=e[n]}catch(e){}}}(e),n()),h.addEventListener("rejectOrApproveChangeEvent",n)})(function(){const e=c(i);try{return function(e){const t={};for(let n=0;n<f.length;n++){const o=f[n];"boolean"==typeof e[o]&&(t[o]=e[o])}if(f.length===Object.keys(t).length)return t}(JSON.parse(e))}catch(e){}}(),(e=>{const t=function(e){const t={};for(const n of f)t[n]="on"===e[n];return t}(e);var n,o;(function(e){const t=JSON.stringify(e);r({name:i,value:t,expires:s})})(n=t),o=n,window.tracking=window.tracking||{},window.tracking.state=window.tracking.state||{},window.tracking.state.consentState=o,document.dispatchEvent(a)})),t=()=>{!function(){b(!0);try{e(`consentGranted_${w}`)}catch(e){}}(),g()},n=()=>{!function(){b(!1);try{e(`consentDenied_${w}`)}catch(e){}}(),g()},o=g,d=t,document.getElementById(v).addEventListener("click",(function(e){e.preventDefault(),e.stopPropagation(),d()})),function(e){document.getElementById("gdpr_block_reject_all").addEventListener("click",(t=>{t.preventDefault(),t.stopPropagation(),e()}))}(n),function(e){document.getElementById(E).addEventListener("click",e)}(o)};try{document.querySelectorAll(".gdpr_settings_full").forEach((e=>{e.addEventListener("click",y)})),window.addEventListener("DOMContentLoaded",(e=>{const t=document.querySelectorAll(".footer-cookies-settings-link");t?t.forEach((e=>{e.addEventListener("click",p)})):document.getElementById("footer-cookies-settings-link").addEventListener("click",p),e.preventDefault()})),document.getElementById("gdpr_banner_close").addEventListener("click",g),c(u)||(document.getElementById(m).style.display="block"),L()}catch(t){e(`GDPR start failed on ${document.location.href} with error trace ${t.stack}`)}})()})();
+</script></div></div><div class="use-for-free-block"><div id="popup-aasm-sign-form-modal" class="modal-wrapper is-hidden"><div class="send-form-wrapper-2 inpopup aasm aasm-signup akamai"><img src="images/64b579f1d916d938a1dc6795_close.svg" loading="lazy" data-w-id="42d4d6af-d38e-5b20-4129-087693e947d1" width="32" alt="" id="popup-aasm-sign-form-modal-close-button" class="image-90"><div class="w-embed"><style>
+.form-msp-image-preview-link {
+    display: block;
+}
+.form-msp-image-preview {
+    display: block !important;
+    margin: 0 auto 16px;
+    width: 160px;
+    height: 36px !important;
+}
+</style>
+<div classname="form-msp-preview">
+  <a target="_blank" classname="form-msp-image-preview-link" href="https://www.g2.com/products/wallarm-api-security-platform/reviews">
+    <img src="images/68054d550c84d966fedd32ff_reviews.svg" alt="" classname="form-msp-image-preview">
+  </a>
+</div></div><div class="n-padding-tiny"></div><p class="n-form-title is-small"><strong>Talk To Sales</strong></p><div class="n-padding-tiny"></div><div class="w-embed w-script"><div class="hs-form-frame" data-region="na1" data-form-id="2c5eba7f-1306-4362-960e-b90bb6e86e1a" data-portal-id="3989912"></div>
+<script src="js/3989912.js" defer=""></script>
+<script>
+    window.addEventListener('hs-form-event:on-submission:success', async (event) => {
+
+        let fieldValues = {};
+
+        try {
+            const values = await HubSpotFormsV4.getFormFromEvent(event).getFormFieldValues();
+
+            fieldValues = Object.fromEntries(
+                values.map(({ name, value }) => {
+                    const [, fieldName] = name.split('/');
+                    return [fieldName, value];
+                })
+            );
+        } catch (e) {}
+
+        window.dataLayer.push({
+            event: 'talk-to-sales-form-submission',
+            enhanced_conversion_data: {
+                ...(fieldValues ? fieldValues : {})
+            }
+        });
+    });
+
+    window.addEventListener('hs-form-event:on-interaction:navigate:next', (event) => {
+        window.dataLayer.push({
+            event: 'talk-to-sales-form-navigate-next'
+        });
+    });
+
+    window.addEventListener('hs-form-event:on-interaction:navigate:previous', (event) => {
+        window.dataLayer.push({
+            event: 'talk-to-sales-form-navigate-previous'
+        });
+    });
+</script></div></div></div><div id="popup-demo-form-modal-settings-container" class="is-hidden w-embed w-script"><script>
+    (() => {
+        const IGNORE_CLASS_NAME = "request-demo-popup-ignore";
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const GTM_TRIGGER_NAME = 'gtm-trigger-name';
+            const ctaLinksTracking = document.querySelectorAll(`a[${GTM_TRIGGER_NAME}]`);
+
+            ctaLinksTracking.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    const triggerName = link.getAttribute(GTM_TRIGGER_NAME);
+
+                    try {
+                        window.dataLayer.push({
+                            event: triggerName
+                        });
+                    } catch (e) {}
+
+                    setTimeout(() => {
+                        if (link.href.indexOf('/akamai-aws') === -1) {
+                            document.location.href = link.href;
+                        }
+                    }, 200);
+
+                    e.preventDefault();
+                });
+            });
+
+
+            const relativeLink = "/akamai-aws?open-talk-to-sales-form=true";
+            const demoButtons = document.querySelectorAll(`a[href*='${relativeLink}']`);
+            const modal = document.getElementById("popup-aasm-sign-form-modal");
+            const close = document.getElementById("popup-aasm-sign-form-modal-close-button");
+
+            if (!demoButtons.length || !modal) {
+                return;
+            }
+
+            for (const demoButton of demoButtons) {
+                demoButton.addEventListener("click", (e) => {
+                    if (e.currentTarget.classList.contains(IGNORE_CLASS_NAME)) {
+                        return;
+                    }
+
+                    toggle();
+                    e.preventDefault();
+                });
+            }
+
+            close.addEventListener("click", (e) => {
+                toggle();
+            });
+
+            function toggle() {
+                modal.classList.toggle("is-hidden");
+                modal.style.display = "";
+            }
+
+            modal.addEventListener("click", (e) => {
+                if (e.target !== modal) {
+                    return;
+                }
+
+                toggle();
+            });
+        });
+    })();
+</script></div></div><div class="n-main-wrapper"><main bind="77c9ce5e-71e8-4949-de13-1eed138fb0af" class="n-section_hero-main n-background-color-dark"><div class="n-padding-global"><div class="n-container-large n-z-index-2"><div class="n-padding-hero-section-secondary is-ato-custom"><div class="n-grid-2-hor n-z-index-2 is-custom"><div id="w-node-_78e0e79d-74ed-6a76-a8d2-7889ee7a7deb-9ff93c31" class="n-hero-text-part-wrapper"><img loading="lazy" src="images/64a26f3dd189c61e57269533_n-img-corner.svg" alt="" class="n-title-corner n-hide-tablet"><h1 sym-bind="{" children":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"043955bb-4412-261e-4998-a58e641c99a2"}}}"="" class="n-heading-style-h1"><strong>Cut CDN Costs, Not API Security</strong></h1><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"cd741934-8cda-3416-bb62-1fa4497d01ac"}}}}}"="" class="n-padding-xsmall"></div><p sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"64c49dd1-552a-9964-563e-f72073990647"}}}},"children":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"f52c2437-210f-ce9d-aa4c-74d2822ee9d7"}}}"="" id="w-node-_78e0e79d-74ed-6a76-a8d2-7889ee7a7df5-9ff93c31" class="n-text-limit-60ch cust">Run security right at your AWS Edge, where your APIs actually live. Wallarm + CloudFront slashes Akamai spendings twice while upgrading your security stack, with no extra traffic costs. </p><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"cd741934-8cda-3416-bb62-1fa4497d01ac"}}}}}"="" class="n-padding-xsmall"></div><p sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"64c49dd1-552a-9964-563e-f72073990647"}}}},"children":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"f52c2437-210f-ce9d-aa4c-74d2822ee9d7"}}}"="" class="n-text-limit-60ch cust">Deploy your Wallarm security edge on AWS in minutes with just one DNS change.</p><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"5fab8c96-fcc7-09e3-3bff-d631b7c389b1"}}}}}"="" class="n-padding-small"></div><div><img src="images/6835da2442600a4ffb417938_G2%20review.svg" loading="lazy" width="170" alt=""></div><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"5fab8c96-fcc7-09e3-3bff-d631b7c389b1"}}}}}"="" class="n-padding-xsmall"></div><div bind="62788c83-103d-1db2-1f80-67f7b72ca0d7" sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"0d9aecc6-29c0-cc80-4172-4cc57713f236"}}}}}"="" class="n-button-group n-z-index-2"><a gtm-trigger-name="WALLARMCOM_AKAMAI_AWS_BODY_FREE_TIER" href="#" class="n-button-orange n-max-width-full-mobile-portrait is-centered w-button" onclick="return false;" style="cursor: pointer;">Use for free</a><div bind="02e19cd2-8bea-0287-0bff-86f2e7bc93cc" class="n-hidden w-embed w-script"><script type="module">
+import bigpicture from '#' // Disabled for static page
+
+const NOT_FOUND = -1;
+const TEST_ACTIVATION_GET_PARAM = 'demo-default-form';
+const BUTTON_ID = 'request_demo_cta';
+const buttonNode = document.getElementById(BUTTON_ID);
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+const PHONE_SIZE = [vw - 18, vh - 40 - 32 - 20];
+
+if (!buttonNode) {
+    throw new Error('not found request demo node');
+}
+
+if (defaultFormsTestActive()) {
+    initTest();
+}
+
+function defaultFormsTestActive() {
+    return !!getQueryParam(TEST_ACTIVATION_GET_PARAM);
+}
+
+function initTest() {
+    buttonNode.addEventListener('click', e => {
+        const params = {
+            el: buttonNode,
+            iframeSrc: 'https://forms.default.com/51941',
+            noLoader: true
+        };
+
+        if (isMobile()) {
+            params.dimensions = PHONE_SIZE;
+        }
+
+        bigpicture(params);
+
+        e.stopPropagation();
+        e.preventDefault();
+    });
+}
+
+function getQueryParam(paramName) {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    return urlParams.get(paramName);
+}
+
+function isMobile() {
+    return navigator.userAgent.indexOf('Mobile') !== -1;
+}
+</script>
+<style>
+    #bp_loader {
+        display:  none !important;
+    }
+</style></div><a id="request_demo_cta" gtm-trigger-name="WALLARMCOM_AKAMAI_AWS_BODY_SALES" href="#" class="n-button-blue w-inline-block" onclick="return false;" style="cursor: pointer;"><div>Talk to sales</div></a></div><div class="text-block-269 aws">500K RPM are Free<br>Deploy in minutes</div></div><div id="w-node-_78e0e79d-74ed-6a76-a8d2-7889ee7a7e08-9ff93c31" class="n-hero-image-wrapper is-centered corner-radius"><img src="images/686aa343c6ec6320e82d1099_img.png" loading="lazy" sizes="(max-width: 1500px) 100vw, 1500px" srcset="images/686aa343c6ec6320e82d1099_img-p-500.png 500w, images/686aa343c6ec6320e82d1099_img-p-800.png 800w, images/686aa343c6ec6320e82d1099_img-p-1080.png 1080w, images/686aa343c6ec6320e82d1099_img.png 1500w" alt="" class="image-306"><div class="div-block-516"><div class="div-block-514"><div class="div-block-515"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-309"><div class="text-block-286">high latency</div></div><div class="div-block-515"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-309"><div class="text-block-286">no api visibility</div></div><div class="div-block-515"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-309"><div class="text-block-286">no api protection</div></div></div><div class="div-block-514 _2"><div class="div-block-515"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" alt="" class="image-309"><div class="text-block-286">operational observability</div></div><div class="div-block-515"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" alt="" class="image-309"><div class="text-block-286">low cost</div></div><div class="div-block-515"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" alt="" class="image-309"><div class="text-block-286">advanced protection</div></div></div></div></div></div><div class="n-padding-large"></div><div class="div-block-415"><div class="div-block-416"></div><div class="div-block-417"></div><p class="n-heading-style-h5 n-text-align-center"><strong class="bold-text-3">Trusted By</strong></p><div class="div-block-417"></div><div class="div-block-416"></div></div><div class="n-padding-small"></div><div class="n-grid-logos"><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250ac-9ff93c31" class="n-card-hero-logo"><img src="images/6502cee202714f0a9299d50f_logo-panasonic.svg" loading="lazy" width="148" height="24" alt="Panasonic Logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250ae-9ff93c31" class="n-card-hero-logo"><img src="images/6502cee3c6a073ec87411d84_logo-victorias-secret.svg" loading="lazy" width="148" height="52" alt="Victoria's Secret Logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250b0-9ff93c31" class="n-card-hero-logo"><img src="images/6502cee29dc15024813c228a_logo-miro.svg" loading="lazy" width="126" height="48" alt="Miro Logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250b2-9ff93c31" class="n-card-hero-logo"><img src="images/67ab1c79ef71725689e1c3a5_Samsung_wordmark%20%281%29%201.svg" loading="lazy" width="148" height="24" alt=""></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250b4-9ff93c31" class="n-card-hero-logo"><img src="images/6502cee2be05d74e7c60ac1f_logo-dropbox.svg" loading="lazy" width="148" height="32" alt="Dropbox Logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250b6-9ff93c31" class="n-card-hero-logo n-card-hero-logo-height"><img src="images/6502cee22532465620298cf8_logo-rappi.svg" loading="lazy" width="102" height="48" alt="Rappi Logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250b8-9ff93c31" class="n-card-hero-logo"><img src="images/658c0422661f9aca80858af8_Group%201867.svg" loading="lazy" width="136" height="64" alt="Revenera logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250ba-9ff93c31" class="n-card-hero-logo no-padding"><img src="images/6502cee214bca61bf3ce781b_logo-wargaming.svg" loading="lazy" width="161" height="36" alt="Wargaming Logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250bc-9ff93c31" class="n-card-hero-logo"><img src="images/6502cee2e2fbe160a4941618_logo-semrush.svg" loading="lazy" width="170" height="24" alt="Semrush Logo"></div><div id="w-node-e6d0f1bc-517e-b1ef-95f8-911bb1d250be-9ff93c31" class="n-card-hero-logo"><img src="images/6502cee21bb22a8a20265d0f_logo-us-leuven.svg" loading="lazy" width="148" height="52" alt="UZ LEUVEN Logo"></div></div></div></div><img src="images/67b7fe129b51e7cc36346fe6_bottom-left.svg" loading="lazy" sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"ce169a70-4c4f-4dbb-e634-e5ef1ac37d34"}}}}}"="" alt="" class="n-big-shape"></div><img width="744" sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"0054e0cc-bdf3-2837-a97c-eade87ef2814"}}}}}"="" alt="" src="images/67b7fdb63665b4277a5f3406_top-right.svg" loading="lazy" class="n-pattern-top-right"><div><div class="n-section"><div class="n-padding-global"><div class="n-container-large"></div></div></div></div></main><div class="n-section is-bottom-stroke"><div class="n-padding-global"><div class="n-container-large"><div class="n-padding-section-large"><div class="n-heading-center-wrapper"><h2 class="n-heading-style-h2 is-center-on-mobile"><strong>CDNs Can't Secure Modern Apps & APIs</strong></h2><div class="n-padding-small"></div><p class="n-text-size-regular is-centered max-width-70">CDNs like Akamai were never designed for the dynamic, personalized, and constantly evolving nature of modern APIs, including the protocols crucial for GenAI applications like gRPC, GraphQL, and WebSocket. They simply inflate your costs without offering true protection.APIs are dynamic, personalized, and constantly changing — exactly what CDNs like Akamai were never designed for. They inflate your bill without giving you real protection.<br>‍<br>Legacy WAFs and CDN security rely on static rules and IP blocking that attackers easily bypass. They miss abuse patterns that evolve across sessions and routes — leaving you exposed to bots, price scraping, credential stuffing, and more.Legacy WAFs and CDN security rely on static rules and IP blocking that attackers easily bypass. They miss abuse patterns that evolve across sessions and routes — leaving you exposed to bots, price scraping, credential stuffing, and more.<br>‍<br>As API traffic grows, so do the blind spots, egress costs, and performance issues. What you need is protection built for APIs, not websites.</p></div></div></div></div></div><div class="n-section is-bottom-stroke n-background-color-dark"><div class="n-padding-global"><div class="n-container-large n-z-index-2"><div class="n-padding-section-large"><div class="n-heading-center-wrapper"><h2 class="n-heading-style-h2 n-max-width-large">One simple switch. Huge wins</h2><div class="n-padding-medium hidden-mobile"></div><div class="n-padding-bottom n-padding-small"></div><div class="n-grid-2-hor is-vert-align ato-custom"><div class="n-left-align-wrapper"><p class="n-text-limit-60ch center-on-mobile">Wallarm Security Edge deploys inside your AWS region with no egress tax, zero-latency inspection, and robust bot, abuse, and scraper protection.<br><br>Bundled with AWS CloudFront — so you keep your CDN and lose the bloat.</p></div><div id="w-node-_86b4bb81-7257-6dbc-cbfa-62cd6728b711-9ff93c31"><img src="images/686e83961d8548af30843853_ui-schema.png" loading="lazy" sizes="(max-width: 1280px) 100vw, 1280px" srcset="images/686e83961d8548af30843853_ui-schema-p-500.png 500w, images/686e83961d8548af30843853_ui-schema-p-800.png 800w, images/686e83961d8548af30843853_ui-schema-p-1080.png 1080w, images/686e83961d8548af30843853_ui-schema.png 1280w" alt="" class="n-illustration-image n-no-borders"></div></div></div></div></div></div><img src="images/67b7fe129b51e7cc36346fe6_bottom-left.svg" loading="lazy" sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"ce169a70-4c4f-4dbb-e634-e5ef1ac37d34"}}}}}"="" alt="" class="n-pattern-bottom-left"><img width="744" sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"0054e0cc-bdf3-2837-a97c-eade87ef2814"}}}}}"="" alt="" src="images/67b7fdb63665b4277a5f3406_top-right.svg" loading="lazy" class="n-pattern-top-right"></div><div class="n-section is-bottom-stroke"><div class="n-padding-global"><div class="n-container-large"><div class="n-padding-section-large"><div class="n-heading-center-wrapper"><h2 class="n-heading-style-h2 n-max-width-large">Value</h2></div><div class="n-padding-medium"></div><div class="w-layout-grid grid-6"><div data-w-id="fbd9faf7-d093-e4de-3877-cd9ed5f31484" style="-webkit-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-510"><img src="images/68654f53cc3c6297ebd7e1c8_icon-1.svg" loading="lazy" alt="" class="image-304"><div class="text-block-285"><strong class="bold-text-15">Cut CDN spend</strong></div><p class="n-text-size-regular is-centered">You can slash your CDN spend by at least half, leveraging free same region AWS traffic. No more two time charges for the same bandwidth (Akamai + AWS)</p></div><div data-w-id="5b154047-f1f9-b7d9-679d-85d452a211a2" style="-webkit-transform:translate3d(0, 110px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 110px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 110px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 110px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-510"><img src="images/686274c829c378602bc850d8_icon-2.svg" loading="lazy" alt="" class="image-304"><div class="text-block-285"><strong class="bold-text-15">See and secure every API</strong></div><p class="n-text-size-regular is-centered">Including those vital for GenAI apps like gRPC, GraphQL, and WebSocket, beyond just traditional WAF</p></div><div data-w-id="765b027a-0b92-5cce-1827-c233b928b558" style="-webkit-transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-510"><img src="images/686274d3fb5ce94c1f19cd08_icon-3.svg" loading="lazy" alt="" class="image-304"><div class="text-block-285"><strong class="bold-text-15">Billing with AWS</strong></div><p class="n-text-size-regular is-centered">Consolidate security and CDN costs, use AWS credits, and eliminate separate vendor headaches</p></div></div><div class="n-padding-medium"></div><div class="w-layout-grid grid-7"><div data-w-id="d56e5a9a-9b61-afc7-47a1-3888ce2c7a80" style="-webkit-transform:translate3d(0, 180px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 180px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 180px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 180px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-510"><img src="images/686274de3d85b13a81a19253_icon-4.svg" loading="lazy" alt="" class="image-304"><div class="text-block-285"><strong class="bold-text-15">Stop API abuse and targeted attacks</strong></div><p class="n-text-size-regular is-centered">API bots, credential stuffing, business logic abuse, and other evolving threats with real-time behavioral detection, where traditional bot solutions and WAFs fall short</p></div><div data-w-id="d56e5a9a-9b61-afc7-47a1-3888ce2c7a88" style="-webkit-transform:translate3d(0, 220px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 220px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 220px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 220px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-510"><img src="images/686274e9a4b294c886a375fc_icon-5.svg" loading="lazy" alt="" class="image-304"><div class="text-block-285"><strong class="bold-text-15">Start today, free</strong></div><p class="n-text-size-regular is-centered">500K requests a month traffic included, no sales hoops</p></div></div></div></div></div></div></div><div class="n-section is-bottom-stroke"><div class="n-padding-global"><div class="n-container-large"><div class="n-padding-section-large"><div class="n-heading-center-wrapper"><h2 class="n-heading-style-h2 n-max-width-large"><strong>Comparison Table</strong></h2></div><div class="n-padding-medium"></div><div class="w-layout-grid grid-8"><div class="n-table-wrap"><p class="n-text-size-regular"><strong>Feature</strong></p></div><div class="n-table-wrap cell"><p class="n-text-size-regular"><strong>Akamai</strong></p></div><div id="w-node-_17d3f407-3830-32b2-d293-2e72713e9072-9ff93c31" class="n-table-wrap cell"><p class="n-text-size-regular is-centered"><strong>Wallarm + CloudFront</strong></p></div><div class="n-table-wrap"><p class="n-text-size-regular">API visibility</p></div><div id="w-node-_166127b9-d38e-13d2-a137-7012e2616ff0-9ff93c31" class="n-table-wrap cell"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-305"><p class="n-text-size-regular">Limited</p></div><div id="w-node-_507c01c0-b690-7003-0cbb-910c94a4d01d-9ff93c31" class="n-table-wrap cell"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="507c01c0-b690-7003-0cbb-910c94a4d01e" alt="" class="image-305 animated"><p class="n-text-size-regular">Full</p></div><div class="n-table-wrap"><p class="n-text-size-regular">Operational observability</p></div><div id="w-node-ea2f2213-1b0e-f0fd-333d-5a7eff030dd0-9ff93c31" class="n-table-wrap cell"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-305"><p class="n-text-size-regular">Complex</p></div><div id="w-node-_8fa88f9a-89ea-e217-0ce7-e5b363e7e8a4-9ff93c31" class="n-table-wrap cell"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image-305 animated"><p class="n-text-size-regular is-centered">Local + Clear</p></div><div class="n-table-wrap"><p class="n-text-size-regular">Cost of dynamic traffic</p></div><div id="w-node-_47d2c3a8-6931-3e9f-c2f3-2fae52aa46c2-9ff93c31" class="n-table-wrap cell"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-305"><p class="n-text-size-regular">High</p></div><div id="w-node-da25b67c-65e7-8050-9714-5f3c5a7c2748-9ff93c31" class="n-table-wrap cell"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image-305 animated"><p class="n-text-size-regular is-centered">Low/no egress tax</p></div><div class="n-table-wrap"><p class="n-text-size-regular">Bot/scraper protection</p></div><div id="w-node-_0fa910d3-635c-16cf-c91d-599c36025df6-9ff93c31" class="n-table-wrap cell"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" alt="" class="image-305"><p class="n-text-size-regular">Basic</p></div><div id="w-node-_6b1d5c75-9836-e079-6016-8a31a44dc19c-9ff93c31" class="n-table-wrap cell"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image-305 animated"><p class="n-text-size-regular">Advanced</p></div><div class="n-table-wrap"><p class="n-text-size-regular">Internal API protection</p></div><div id="w-node-_93d9eb5b-1acc-25af-8a7b-e2d7b3a52e17-9ff93c31" class="n-table-wrap cell"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-305"><p class="n-text-size-regular">None</p></div><div id="w-node-_8db94537-fa96-aa98-8da0-9d10117809e7-9ff93c31" class="n-table-wrap cell"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image-305 animated"><p class="n-text-size-regular">Yes</p></div><div class="n-table-wrap"><p class="n-text-size-regular">Start without sales call</p></div><div id="w-node-_9524f32b-7f63-e781-4972-a7c0c8603c23-9ff93c31" class="n-table-wrap cell"><img src="images/68627f5cb17fb1cdb785b702_checkmark-no.svg" loading="lazy" alt="" class="image-305"><p class="n-text-size-regular">No</p></div><div id="w-node-_42af6475-dc52-fe3c-58e7-99595c8b213f-9ff93c31" class="n-table-wrap cell"><img src="images/68627fd3133adca8a25c1479_checkmark-yes.svg" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image-305 animated"><p class="n-text-size-regular">Yes</p></div></div></div></div></div></div><div><div class="w-embed"><style>
+    .w-slider-dot {
+        position: relative;
+        width: 4px;
+        height: 4px;
+        background-color: #5E6773;
+        border-radius: 2px;
+        margin: 0 10px;
+        overflow: hidden;
+        border: none;
+        opacity: 1;
+    }
+
+    .w-slider-dot::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #5E6773;
+        z-index: -1;
+    }
+
+    .w-slider-dot.w-active {
+
+    }
+
+    .w-slider:not([data-autoplay="true"]) .w-slider-dot.w-active {
+        background: #FF5E3A;
+    }
+
+    .w-slider[data-autoplay="true"] .w-slider-dot.w-active {
+        width: 80px;
+        background: linear-gradient(to right, #FF5E3A 100%, #5E6773 0%);
+        background-size: 0% 100%;
+        background-repeat: no-repeat;
+        animation: bgFill 4300ms forwards;
+    }
+
+    @keyframes bgFill {
+        to {
+            background-size: 100% 100%;
+        }
+    }
+</style></div><section bind="b37203b3-73ef-3cf2-708f-35fb90b98f9f" class="n-section-last-cta"><div></div></section><div class="n-section_hero-main n-background-color-dark n-section-last-cta"><div class="n-padding-global"><div class="n-container-large"><div class="n-padding-last-offer"><div class="n-grid-2-hor n-z-index-2"><div id="w-node-_27553bf1-a919-4d3e-7569-43557182c5b6-9ff93c31" class="n-hero-text-part-wrapper"><div class="request-personalized-demo-label">GET A PERSONALIZED DEMO</div><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"decc93bb-4f57-c8d2-fce4-6fe57f0e53b5"}}}}}"="" class="n-padding-bottom n-padding-small"></div><img loading="lazy" src="images/64a26f3dd189c61e57269533_n-img-corner.svg" alt="" class="n-title-corner n-hide-tablet"><h1 sym-bind="{" children":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"355cfff9-cf6a-43ce-28ea-d049b250a1f6"}}}"="" class="n-heading-style-h3">Ready to See Wallarm in action?</h1><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"decc93bb-4f57-c8d2-fce4-6fe57f0e53b5"}}}}}"="" class="n-padding-bottom n-padding-small"></div><div data-delay="4000" data-animation="outin" class="quote-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="4" data-duration="1000" data-infinite="true"><div class="mask-6 w-slider-mask"><div class="w-slide"><div class="n-quote-slider-slide"><p sym-bind="{" children":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"69f2a18d-8f73-8525-5026-1da516872ddb"}}}"="" class="n-text-limit-60ch font-15 font-style-serif">"Wallarm really protects our service and provides good visibility and user-friendly control."</p><div class="n-grid-2-hor align-right"><div><img sizes="(max-width: 4778px) 100vw, 4778px" srcset="images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037-p-500.png 500w, images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037-p-800.png 800w, images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037-p-1080.png 1080w, images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037-p-1600.png 1600w, images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037-p-2000.png 2000w, images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037-p-2600.png 2600w, images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037-p-3200.png 3200w, images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037.png 4778w" alt="" src="images/680c2cca81bcd079d6e331f1_-97619b79ab9db25ce8a6dfc88312f037.png" loading="lazy" class="image-295"></div><div class="div-block-499"><div class="bold-text">Anton Bulavin</div><div class="text-block-281">Head of Application Security</div></div></div></div></div><div class="w-slide"><div class="n-quote-slider-slide"><p sym-bind="{" children":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"69f2a18d-8f73-8525-5026-1da516872ddb"}}}"="" class="n-text-limit-60ch font-15 font-style-serif">"I would absolutely recommend Wallarm, in a heartbeat. They do what they say on the tin – meaning what they say they can do, they really do."</p><div class="n-grid-2-hor align-right"><div id="w-node-_27553bf1-a919-4d3e-7569-43557182c5d1-9ff93c31"><img sizes="(max-width: 2484px) 100vw, 2484px" srcset="images/681365a1074cfadab96d92c3_revenera-logo-vector%202-p-500.png 500w, images/681365a1074cfadab96d92c3_revenera-logo-vector%202-p-800.png 800w, images/681365a1074cfadab96d92c3_revenera-logo-vector%202-p-1080.png 1080w, images/681365a1074cfadab96d92c3_revenera-logo-vector%202-p-1600.png 1600w, images/681365a1074cfadab96d92c3_revenera-logo-vector%202.png 2484w" alt="" src="images/681365a1074cfadab96d92c3_revenera-logo-vector%202.png" loading="lazy" class="image-295"></div><div class="div-block-499"><div class="bold-text">Rob Davies</div><div class="text-block-281">VP of Engineering and Lead Architect</div></div></div></div></div><div class="w-slide"><div class="n-quote-slider-slide"><p sym-bind="{" children":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"69f2a18d-8f73-8525-5026-1da516872ddb"}}}"="" class="n-text-limit-60ch font-15 font-style-serif">“We didn’t need to change anything in the application deployment infrastructure. The installation itself is easy and straightforward.”</p><div class="n-grid-2-hor align-right"><div id="w-node-_27553bf1-a919-4d3e-7569-43557182c5dd-9ff93c31"><img sizes="(max-width: 2696px) 100vw, 2696px" srcset="images/681366a5e7d20d5896cdc899_xsolla%20logo-p-500.png 500w, images/681366a5e7d20d5896cdc899_xsolla%20logo-p-800.png 800w, images/681366a5e7d20d5896cdc899_xsolla%20logo-p-1080.png 1080w, images/681366a5e7d20d5896cdc899_xsolla%20logo-p-1600.png 1600w, images/681366a5e7d20d5896cdc899_xsolla%20logo-p-2000.png 2000w, images/681366a5e7d20d5896cdc899_xsolla%20logo-p-2600.png 2600w, images/681366a5e7d20d5896cdc899_xsolla%20logo.png 2696w" alt="" src="images/681366a5e7d20d5896cdc899_xsolla%20logo.png" loading="lazy" class="image-295"></div><div class="div-block-499"><div class="bold-text">Konstantin Golubitsky</div><div class="text-block-281">CTO</div></div></div></div></div></div><div class="w-slider-arrow-left"></div><div class="w-slider-arrow-right"></div><div class="slide-nav-8 w-slider-nav"></div></div></div><div class="request-personalized-demo-right"><div class="request-personalized-demo-video-container subscribe-form-button"><a href="#" class="request-personalized-demo-video-container-link subscribe-form-button w-inline-block" onclick="return false;" style="cursor: pointer;"></a><div class="request-personalized-demo-video-container-bg"><div class="code-embed w-embed w-iframe"><style>
+    .request-personalized-demo-video-container {
+        aspect-ratio: 16 / 9;
+        box-shadow: 5px 5px 0 var(--accent);
+    }
+    .request-personalized-demo-video-iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    .n-button-blue.subscribe-form-button {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    /* Specific hover effect for the button under video */
+    #subscribe-form-button:hover,
+    #subscribe-form-button.n-button-blue.subscribe-form-button.w-button:hover,
+    a#subscribe-form-button.n-button-blue.subscribe-form-button.w-button:hover {
+        box-shadow: 0 5px 0px #ff441c !important;
+        transform: translateY(-6px) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    
+    /* Footer links and buttons hover effects */
+    .n-footer-link,
+    footer a,
+    footer button,
+    .footer-cookies-settings-link {
+        cursor: pointer !important;
+        transition: color 0.3s ease !important;
+    }
+    
+    .n-footer-link:hover,
+    footer a:hover,
+    footer button:hover,
+    .footer-cookies-settings-link:hover {
+        color: #ff441c !important;
+        cursor: pointer !important;
+    }
+    
+    /* Make sure all footer link elements show pointer cursor */
+    .n-footer .n-footer-link,
+    .n-footer a,
+    .n-footer button {
+        cursor: pointer !important;
+    }
+    
+    /* Keep section titles as regular text (no hover effect) */
+    .n-footer-section-title {
+        cursor: default !important;
+    }
+</style>
+<iframe width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" class="request-personalized-demo-video-iframe" src="https://player.vimeo.com/video/1077418935?h=8e650aed1a&title=0&byline=0&portrait=0&playsinline=0&muted=1&autoplay=1&autopause=0&controls=0&loop=1">
+</iframe></div></div></div><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"decc93bb-4f57-c8d2-fce4-6fe57f0e53b5"}}}}}"="" class="n-padding-bottom n-padding-small"></div><div sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"decc93bb-4f57-c8d2-fce4-6fe57f0e53b5"}}}}}"="" class="n-padding-bottom n-padding-small"></div><div class="n-flex-center"><a id="subscribe-form-button" gtm-trigger-name="WALLARMCOM_AKAMAI_AWS_FOOTER_SALES" href="#" class="n-button-blue subscribe-form-button w-button" onclick="return false;" style="cursor: pointer;">Talk to sales</a></div></div></div></div></div></div></div></div><div class="is-hidden w-embed"><div id="hubspot-web-interactives-loader"></div>
+<div id="hubspot-messages-loader"></div></div><footer bind="7d2f5b61-1211-4966-15f8-0a0f312f2a5b" class="n-footer"><img src="images/67c551876eb13316e07bce77_bottom-flame-not-cropped.svg" loading="lazy" sym-bind="{" visibility":{"type":"record","val":{"conditions":{"type":"select","val":{"from":{"type":"variable","val":"data"},"prop":"ce169a70-4c4f-4dbb-e634-e5ef1ac37d34"}}}}}"="" alt="" class="n-big-shape smaller"><div class="n-padding-global"><div class="n-container-large"><div><div class="n-footer-container"><div class="n-top-section"><img src="images/67b801f6e7c26cddc47914f2_logo-portrait.svg" loading="lazy" width="97" height="" alt="wallarm logo 2" title="Logo Wallarm"></div><div itemscope="true" itemtype="http://schema.org/WPFooter" class="n-footer-links-wrapper"><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Wallarm Products & Platform</div></div><div class="n-footer-rigth-col footer"><a href="/product/api-security-overview" class="n-footer-link">Integrated App and API Security Platform</a><a href="/product/advanced-api-security" class="n-footer-link">Advanced API Security</a><a href="/product/wallarm-waap" class="n-footer-link">Cloud-Native WAAP</a><a href="/product/api-discovery" class="n-footer-link">API Discovery</a><a href="/product/fast" class="n-footer-link">API Security Testing</a><a href="/product/api-leak-management" class="n-footer-link">API Leak Management</a><a href="/product/integrations" class="n-footer-link">Integrations</a><a href="/product/deployment-options" class="n-footer-link">Deployment</a></div></div><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Solutions by Need</div></div><div class="n-footer-rigth-col footer"><a href="/solutions/discover-all-apis" class="n-footer-link">Discover All APIs</a><a href="/solutions/detect-and-stop-attacks" class="n-footer-link">Detect All Attacks</a><a href="/solutions/test-api-for-security-issues" class="n-footer-link">Test APIs For Security Issues</a></div></div><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Solutions by Industry</div></div><div class="n-footer-rigth-col footer"><a href="/solutions/wallarm-for-healthcare" class="n-footer-link">API Security for Healthcare</a><a href="/solutions/wallarm-for-financial-services" class="n-footer-link">API Security for Fintech</a><a href="/solutions/wallarm-for-ecommerce" class="n-footer-link">API Security for Retail</a><a href="/solutions/wallarm-for-saas" class="n-footer-link">API Security for Technology</a></div></div><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Solutions by Cloud</div></div><div class="n-footer-rigth-col footer"><a href="/solutions/wallarm-for-aws" class="n-footer-link">AWS</a><a href="/solutions/wallarm-for-gcp" class="n-footer-link">GCP</a><a href="/solutions/wallarm-for-microsoft-azure" class="n-footer-link">Azure</a><a href="/solutions/kubernetes-api-security" class="n-footer-link">Kubernetes</a></div></div><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Resources</div></div><div class="n-footer-rigth-col footer"><a href="/resources" class="n-footer-link">Resource Library</a><a href="https://www.wallarm.com/what/api-security-tutorial" class="n-footer-link">API Security Tutorial</a><a href="/resources?tab=whitepapers#resources" class="n-footer-link">Whitepapers</a><a href="/resources?tab=datasheets#resources" class="n-footer-link">Datasheets</a><a href="/resources?tab=case-studies#resources" class="n-footer-link">Case Studies</a><a href="/resources?tab=webinars#resources" class="n-footer-link">Webinars</a><a href="/what" class="n-footer-link">Learning Center</a><a href="/cloud-native-products-101" class="n-footer-link">Cloud Native Products 101</a><a href="/glossary" class="n-footer-link">Glossary</a><a href="/support" class="n-footer-link">Support</a></div></div><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Featured Resources</div></div><div class="n-footer-rigth-col footer"><a href="https://www.wallarm.com/resources/2024-api-threatstats-tm-report" class="n-footer-link">2024 API ThreatStats™ Report</a><a href="https://www.wallarm.com/resources/api-security-checklist" class="n-footer-link">API Security Checklist</a><a href="https://www.wallarm.com/resources/top-five-challenges-in-protecting-apis" class="n-footer-link">Top Five Challenges in Protecting APIs</a><a href="https://www.wallarm.com/resources/a-cisos-guide-to-cloud-application-security" class="n-footer-link">A CISO's Guide to Cloud Application Security</a><a href="https://www.wallarm.com/resources/wallarm-for-kubernetes" class="n-footer-link">Wallarm for Kubernetes</a></div></div><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Learn Wallarm</div></div><div class="n-footer-rigth-col footer"><div class="n-footer-rigth-col footer"><a href="https://docs.wallarm.com" class="n-footer-link">Documentation</a><a href="https://docs.wallarm.com/api/overview/" class="n-footer-link">API specs</a><a href="https://registry.terraform.io/providers/wallarm/wallarm/latest" class="n-footer-link">Terraform Provider</a></div><div class="n-footer-rigth-col footer"><a href="/terms-of-service" class="n-footer-link">Terms of Services</a><a href="/privacy-policy" class="n-footer-link">Privacy Policy</a><a href="/cookie-policy" class="n-footer-link">Cookies Policy</a><a href="/wallarm-security-bug-bounty-program" class="n-footer-link">Security Bug Bounty Program</a><a href="/end-user-license-agreement" class="n-footer-link">Software License Agreement</a><a href="/service-level-agreement" class="n-footer-link">Service Level Agreement</a><a id="footer-cookies-settings-link" href="#" class="n-footer-link w-inline-block"><div class="footer-cookies-settings-link">Cookies Settings</div></a></div></div></div><div class="n-footer-line"><div class="n-footer-left-col"><div class="n-footer-section-title">Company</div></div><div class="n-footer-rigth-col footer"><a href="/company" class="n-footer-link">About Us</a><a href="/partners" class="n-footer-link">Partners</a><a href="https://wallarm.recruitee.com/" target="_blank" class="n-footer-link">Careers</a><a href="/wallarm-security-bug-bounty-program" class="n-footer-link">Security Bug Bounty Program</a><a href="/end-user-license-agreement" class="n-footer-link">Software License Agreement</a><a href="/service-level-agreement" class="n-footer-link">Service Level Agreement</a><a href="/media-assets" class="n-footer-link">Media Assets</a></div></div><div class="n-footer-line"><div class="n-footer-left-col putdown"><div><div itemprop="name" class="n-text-size-small n-text-color-white n-text-style-muted n-text-align-left">2025 © Wallarm Inc.</div></div></div><div class="n-footer-rigth-col footer vertical pre-aicpasoc-image-wrp"><div><div itemtype="https://schema.org/Place" itemprop="contentLocation" itemscope="true"><div itemtype="https://schema.org/PostalAddress" itemprop="address" itemscope="true"><div itemprop="streetAddress" class="n-text-size-small n-text-style-muted n-text-align-left">188 King St. Unit 508,<br> San Francisco, CA, 94107<br>(415) 940-7077<br>request@wallarm.com</div></div></div></div><div><img src="images/62659ca258a08c6e65e51b04_aicpasoc_2.png" loading="lazy" width="80" height="80" alt="AICPA logo" class="n-aicpa-image"></div></div></div></div><div class="n-footer-links-vertical"><div class="n-footer-column-wrapper"><div class="n-footer-column-top"><div class="n-footer-section-title">Wallarm Products & Platform</div></div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom"><a href="/product/api-security-overview" class="n-footer-link">Platform Overview</a><a href="/product/advanced-api-security" class="n-footer-link">Advanced API Security</a><a href="/product/api-discovery" class="n-footer-link">API Discovery</a><a href="/product/fast" class="n-footer-link">API Security Testing</a><a href="/product/api-abuse-prevention" class="n-footer-link">API Abuse Prevention</a><a href="/product/credential-stuffing-detection" class="n-footer-link">Credential Stuffing Detection</a><a href="/product/protect-agentic-ai" class="n-footer-link">Agentic AI</a><a href="/product/aasm" class="n-footer-link">API Attack Surface Management</a><a href="/product/api-leak-management" class="n-footer-link">API Leak Management</a><a href="/wallarm-open-source-projects" class="n-footer-link">Open Source Projects</a></div><div class="n-padding-small is-footer-special"></div><div class="n-footer-column-top"><div class="n-footer-section-title">Platform Benefits</div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom is-stack"><a href="/product/integrations" class="n-footer-link">Integrations</a><a href="/product/deployment-options" class="n-footer-link">Deployment</a><a href="/product/technology" class="n-footer-link">Technology</a><a href="/product/security-edge-platform" class="n-footer-link">Security Edge</a></div></div></div><div class="n-footer-column-wrapper"><div class="n-footer-column-top"><div class="n-footer-section-title">Solutions by Need</div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom"><a href="/solutions/discover-all-apis" class="n-footer-link">Discover All APIs</a><a href="/solutions/detect-and-stop-attacks" class="n-footer-link">Detect and Stop Attacks</a><a href="/solutions/respond-to-api-attacks" class="n-footer-link">Respond to API Attacks</a><a href="/solutions/test-api-for-security-issues" class="n-footer-link">Test APIs for Security Issues</a><a href="/professional-information-security-services" class="n-footer-link">Conduct Pentest</a><a href="/solutions/s-protect-agentic-ai" class="n-footer-link">Agentic AI</a></div></div><div class="n-padding-small is-footer-special"></div><div class="n-footer-column-top"><div class="n-footer-section-title">Solutions by Industry</div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom is-stack"><a href="/solutions/wallarm-for-healthcare" class="n-footer-link">Healthcare</a><a href="/solutions/wallarm-for-financial-services" class="n-footer-link">Fintech</a><a href="/solutions/wallarm-for-ecommerce" class="n-footer-link">Ecommerce</a><a href="/solutions/wallarm-for-saas" class="n-footer-link">Technology Companies</a></div></div><div class="n-padding-small is-footer-special"></div><div class="n-footer-column-top"><div class="n-footer-section-title">Solutions by Cloud</div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom is-stack"><a href="/solutions/wallarm-for-aws" class="n-footer-link">AWS</a><a href="/solutions/wallarm-for-gcp" class="n-footer-link">GCP</a><a href="/solutions/wallarm-for-microsoft-azure" class="n-footer-link">Azure</a><a href="/solutions/kubernetes-api-security" class="n-footer-link">Kubernetes</a><a href="/solutions/kong-api-security" class="n-footer-link">Kong</a><a href="/solutions/mulesoft-api-security" class="n-footer-link">MuleSoft</a></div></div></div><div class="n-footer-column-wrapper"><div class="n-footer-column-top"><div class="n-footer-section-title">Resources</div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom"><a href="/resources" class="n-footer-link">Resource Library</a><a href="https://www.wallarm.com/resources?tab=reports" class="n-footer-link">Reports</a><a href="/resources?tab=whitepapers#resources" class="n-footer-link">Whitepapers</a><a href="/resources?tab=datasheets#resources" class="n-footer-link">Datasheets</a><a href="/resources?tab=case-studies#resources" class="n-footer-link">Case Studies</a><a href="/resources?tab=webinars#resources" class="n-footer-link">Webinars</a><a href="/what" class="n-footer-link">Learning Center</a><a href="/cloud-native-products-101" class="n-footer-link">Cloud Native Products 101</a><a href="/glossary" class="n-footer-link">Glossary</a><a href="/support" class="n-footer-link">Support</a></div></div></div><div class="n-footer-column-wrapper"><div class="n-footer-column-top"><div class="n-footer-section-title">Company</div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom is-stack"><a href="/company" class="n-footer-link">About Us</a><a href="/partners" class="n-footer-link">Partners</a><a href="/press-room" class="n-footer-link">Press</a><a href="/company-events" class="n-footer-link">Events</a><a href="https://wallarm.recruitee.com/" target="_blank" class="n-footer-link">Careers</a></div></div><div class="n-padding-small is-footer-special"></div><div class="n-footer-column-top"><div class="n-footer-section-title">Legal & Media</div><div class="n-padding-xsmall"></div><div class="n-footer-column-bottom is-stack"><a href="/media-assets" class="n-footer-link">Media Assets</a><a href="https://docs.wallarm.com" class="n-footer-link">Documentation</a><a href="https://docs.wallarm.com/api/overview/" class="n-footer-link">API specs</a><a href="https://registry.terraform.io/providers/wallarm/wallarm/latest" class="n-footer-link">Terraform Provider</a><a href="/terms-of-service" class="n-footer-link">Terms of Services</a><a href="/privacy-policy" class="n-footer-link">Privacy Policy</a><a href="/cookie-policy" class="n-footer-link">Cookies Policy</a><a href="/wallarm-security-bug-bounty-program" class="n-footer-link">Security Bug Bounty Program</a><a href="/end-user-license-agreement" class="n-footer-link">Software License Agreement</a><a href="/service-level-agreement" class="n-footer-link">Service Level Agreement</a><a id="footer-cookies-settings-link" href="#" class="n-footer-link w-inline-block"><div class="footer-cookies-settings-link">Cookies Settings</div></a></div></div></div></div><div class="n-footer-line"><div class="n-footer-left-col putdown"></div><div class="n-footer-rigth-col footer vertical pre-aicpasoc-image-wrp"></div></div><div class="footer-bottom-line"><div class="footer-line-left"><img src="images/62659ca258a08c6e65e51b04_aicpasoc_2.png" loading="lazy" width="64" height="64" alt="AICPA logo" class="n-aicpa-image"><div itemprop="name" class="n-text-size-small n-text-color-white n-text-style-muted">2025 © Wallarm Inc.</div></div><div class="footer-line-right"><div itemprop="streetAddress" class="n-text-size-small n-text-color-white n-text-style-muted n-text-align-right">188 King St. Unit 508,<br> San Francisco, CA, 94107<br>(415) 940-7077<br>request@wallarm.com</div></div></div></div></div></div></div><img src="images/67c552bcc466dcf2efede012_top-not-cropped.svg" loading="lazy" alt="" class="n-pattern-top-right smaller"></footer></div><script src="js/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript" crossorigin="anonymous"></script><script src="js/wallarm.37546ef6.aec9f78ec8cf9900.js" type="text/javascript"></script><script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+</script>
+
+<!-- UTM -->
+<script>(()=>{var t={142:t=>{var e=Array.isArray;t.exports=e}},e={};function n(r){var o=e[r];if(void 0!==o)return o.exports;var u=e[r]={exports:{}};return t[r](u,u.exports,n),u.exports}n.n=t=>{var e=t&&t.__esModule?()=>t.default:()=>t;return n.d(e,{a:e}),e},n.d=(t,e)=>{for(var r in e)n.o(e,r)&&!n.o(t,r)&&Object.defineProperty(t,r,{enumerable:!0,get:e[r]})},n.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),(()=>{"use strict";var t=n(142),e=n.n(t),r=document.location.hostname.indexOf("localhost")>=0?"localhost":`.${document.location.hostname.split(".").slice(-2).join(".")}`;function o({name:t,value:e,expires:n=0,path:o="/",subdomains:u,domain:m}){return document.cookie=t+"="+encodeURIComponent(e)+(n?"; expires="+new Date(Number(new Date)+1e3*n).toUTCString():"")+(o?"; path="+o:"")+(u?`; domain=${r}`:"")+(!u&&m?"; domain="+m:"")}const u=["utm_source","utm_content","utm_campaign","utm_medium","utm_term"];var m=function(){var t=function(){var t,e=document.location.search.replace("?","").split("&"),n={};for(t=0;t<e.length;t++){var r=e[t].split("="),o=decodeURIComponent(r[0]),u=decodeURIComponent(r[1]);n[o]=u}return n}();const{utm_source:e,utm_content:n,utm_campaign:r,utm_medium:o,utm_term:u}=t;return{utm_source:e,utm_content:n,utm_campaign:r,utm_medium:o,utm_term:u}}();function c(t){u.forEach((e=>{t[e]?o({name:e,value:t[e],expires:5184e3,secure:!0}):function(t){o({name:t,value:"",expires:-1})}(e)}))}function a(){const{utm_source:t,utm_content:n,utm_campaign:r,utm_medium:o,utm_term:u}=function(t){if(!e()(t))return{};var n,r,o={};for(r=0;r<t.length;r+=1)(n=String(t[r]).split("="))[0]&&n[1]&&(o[n[0]]=decodeURIComponent(n[1]));return o}((document.cookie||"").split("; "));return{utm_source:t,utm_content:n,utm_campaign:r,utm_medium:o,utm_term:u}}m.utm_source?c(m):function(){var t=document.referrer;if(t){var{utm_source:e}=a();if(!e){var n=function(t){if(!t)return"";try{var e=document.createElement("a");return e.href=t,e.hostname}catch(t){}return""}(t);n&&n!==document.location.hostname&&c({utm_source:n})}}}();const i=document.querySelectorAll(".signup-my-wallarm-com");i.length&&function(){const t=function(t){const e=new URLSearchParams;let n="";return u.forEach((n=>{t[n]&&e.append(n,t[n])})),n=e.toString(),n.length?`?${n}`:""}(a());t&&function(t){i.forEach((e=>{const n=e.getAttribute("href"),r=new URL(t,n).toString();e.setAttribute("href",r)}))}(t)}()})()})();</script>
+<!-- UTM -->
+
+<script>
+var Webflow = Webflow || [];
+Webflow.push(function () {
+  var tabName = getParam('tab');
+  if (!tabName) return;
+
+  $("a[data-w-tab='" + tabName + "']").triggerHandler('click');
+
+  function getParam(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+});
+</script>
+
+<script type="text/javascript">
+    function onConversationsAPIReady() {
+        window.dataLayer.push({
+            "event": "chat-start"
+        });
+    }
+
+    if (window.HubSpotConversations) {
+        onConversationsAPIReady();
+    } else {
+        window.hsConversationsOnReady = [onConversationsAPIReady];
+    }
+</script>
+
+<!-- app-init-tag --> 
+<script>
+  (() => {
+    "use strict";
+    const loadScript = function (src) {
+      return new Promise((resolve) => {
+        let script = document.createElement("script");
+        script.async = true;
+        script.onload = resolve;
+        script.src = src;
+        script.type = "text/javascript";
+        document.head.appendChild(script);
+      });
+    };
+    const ANALYTICS = "analytics";
+    const PERSONALIZATION = "personalization";
+    const ADVERTISING = "advertising";
+    const CONSENT_KEYS = [ANALYTICS, PERSONALIZATION, ADVERTISING];
+    const CONSENT_MAP = {
+      [ADVERTISING]: "ad_storage",
+      [ANALYTICS]: "analytics_storage",
+      [PERSONALIZATION]: "personalization_storage",
+    };
+    function hasConsent() {
+      return (
+        window.tracking.state.consentState !== undefined &&
+        window.tracking.state.consentState.advertising &&
+        window.tracking.state.consentState.analytics
+      );
+    }
+    function onConsentChange() {
+      return new Promise((resolve) => {
+        document.addEventListener("consentChangeEvent", () => {
+          if (hasConsent()) resolve();
+        });
+      });
+    }
+    function isNoConsent() {
+      return (
+        typeof tracking.state === "object" &&
+        tracking.state.consentState !== undefined &&
+        !window.tracking.state.consentState.advertising &&
+        !window.tracking.state.consentState.analytics
+      );
+    }
+    const isMotoGPower = navigator.userAgent.indexOf("moto g power") > -1;
+    function pushDataLayer() {
+      dataLayer.push(arguments);
+    }
+    function wait(ms = 5000) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+    function runAll() {
+      return Promise.all([loadGtag(), loadReddit(), runAmplitude()]);
+    }
+    function loadGtag() {
+      function push() {
+        dataLayer.push(arguments);
+      }
+      window.dataLayer = window.dataLayer || [];
+      push("js", new Date());
+      push("config", "G-BFNGJ1Q90V");
+      return loadScript("https://www.googletagmanager.com/gtag/js?id=G-BFNGJ1Q90V");
+    }
+    function loadReddit() {
+      if (document.location.pathname.indexOf("/aasm") === -1) return;
+      (function (win, doc) {
+        if (!win.rdt) {
+          var rdt = (win.rdt = function () {
+            rdt.sendEvent ? rdt.sendEvent.apply(rdt, arguments) : rdt.callQueue.push(arguments);
+          });
+          rdt.callQueue = [];
+          var script = doc.createElement("script");
+          script.src = "https://www.redditstatic.com/ads/pixel.js";
+          script.async = true;
+          var firstScript = doc.getElementsByTagName("script")[0];
+          firstScript.parentNode.insertBefore(script, firstScript);
+        }
+      })(window, document);
+      rdt("init", "a2_fn1101u1ygf3");
+      rdt("track", "PageVisit");
+      return Promise.resolve();
+    }
+    function loadGTM() {
+      let win = window,
+        doc = document;
+      win["dataLayer"] = win["dataLayer"] || [];
+      win["dataLayer"].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      return loadScript("https://www.googletagmanager.com/gtm.js?id=GTM-P8GHH8M");
+    }
+    async function runAmplitude() {
+      if (isNoConsent()) {
+        await onConsentChange().then(() => {
+          initAmplitude();
+        });
+        return;
+      }
+      let options = {};
+      if (!hasConsent()) options.cookieExpiration = 14;
+      await initAmplitude(options);
+      document.querySelectorAll(".w-button").forEach((el) => {
+        el.setAttribute("data-original-text", el.textContent || "");
+      });
+      document.addEventListener(
+        "click",
+        function (e) {
+          const btn = e.target.closest(".w-button");
+          if (!btn) return;
+          const pathParts = window.location.pathname.split("/").filter(Boolean);
+          const page = pathParts[pathParts.length - 1] || "home";
+          const cta = (btn.getAttribute("data-original-text") || "")
+            .trim()
+            .replace(/\s+/g, "_")
+            .toUpperCase();
+          const eventName = `WALLARMCOM_${cta}`;
+          window.amplitude.track(eventName, { page_path: page, cta_text: cta });
+        },
+        true
+      );
+      await new Promise((resolve) => {
+        document.removeEventListener("consentChangeEvent", () => {
+          if (isNoConsent()) resolve();
+        });
+      });
+    }
+    async function initAmplitude(options) {
+      await loadScript("https://cdn.amplitude.com/script/78e35700de65a613b46a06dafca5d5e7.js");
+      setTimeout(() => {
+        window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
+        window.amplitude.init(
+          "78e35700de65a613b46a06dafca5d5e7",
+          { ...options, fetchRemoteConfig: true, autocapture: true, minIdLength: 3 }
+        );
+      }, 500);
+    }
+    function updateConsent() {
+      const consentObj = {};
+      for (let i = 0; i < CONSENT_KEYS.length; i++) {
+        const key = CONSENT_KEYS[i];
+        const mapKey = CONSENT_MAP[key];
+        const value = window.tracking.state.consentState[key];
+        consentObj[mapKey] = value ? "granted" : "denied";
+      }
+      pushDataLayer("consent", "update", consentObj);
+    }
+    function isScrolled() {
+      return window.scrollY > 40;
+    }
+    window.tracking = window.tracking || {};
+    window.tracking.state = window.tracking.state || {};
+    window.dataLayer = window.dataLayer || [];
+    if (!isMotoGPower)
+      Promise.resolve()
+        .then(() => {
+          if (!window.tracking.state.consentState) return wait(500);
+        })
+        .then(() => {
+          window.tracking.state.consentState
+            ? updateConsent()
+            : pushDataLayer("consent", "default", {
+                ad_storage: "denied",
+                ad_user_data: "denied",
+                ad_personalization: "denied",
+                analytics_storage: "denied",
+                region: [
+                  "GB","BE","BG","CZ","DK","CY","LV","LT","LU","ES","FR","HR","IT","PL","PT","RO","SI","HU","MT","NL","AT","IS","LI","NO","SK","FI","SE","DE","EE","IE","EL"
+                ],
+                wait_for_update: 500,
+              });
+        })
+        .then(() => {
+          Promise.all([
+            Promise.race([
+              new Promise((resolve) => {
+                if (document.location.pathname.indexOf("/what") !== 0) resolve();
+              }),
+              new Promise((resolve) => {
+                if (isScrolled()) return resolve();
+                let triggered = false;
+                document.addEventListener("scroll", () => {
+                  if (!triggered && isScrolled()) {
+                    resolve();
+                    triggered = true;
+                  }
+                });
+              }),
+              wait(5000),
+            ]).then(runAll),
+            wait(5000).then(loadGTM),
+          ]).catch((err) => {
+            if (
+              typeof Sentry !== "undefined" &&
+              typeof Sentry.captureException === "function"
+            ) {
+              (function (tags) {
+                const keys = Object.keys(tags);
+                for (let i = 0; i < keys.length; i++) {
+                  const key = keys[i],
+                    value = tags[key] || "";
+                  Sentry.setTag(key, value);
+                }
+              })({});
+              Sentry.captureException(err);
+            }
+          });
+          hasConsent() || onConsentChange().then(() => updateConsent());
+        });
+  })();
+</script>
+<script defer="defer" src="js/main.f15f927a.js"></script>
+<style>
+/* Prettified CSS for better readability */
+.start-screen_content__zkoVV {
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 500px;
+  width: 100%;
+}
+.start-screen_block__soKBv {
+  background: var(--c-background-emphasized);
+  border-radius: 8px;
+  color: var(--c-text);
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  overflow: hidden;
+  padding: min(4vh, 40px) min(4vw, 32px);
+  position: relative;
+}
+.start-screen_loader__wlfnC {
+  left: 50%;
+  margin-right: -50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.start-screen_block__soKBv:first-child {
+  flex: 1.5 1;
+}
+.start-screen_form__Hv7Qq {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+.start-screen_error__jJlpc {
+  color: var(--c-error-600);
+  margin: -12px 0;
+}
+.start-screen_entry__mo1Ee {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 18px 0 -8px;
+}
+.start-screen_column__adCK9 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+.start-screen_provider__Y9DHy {
+  background: var(--c-text);
+  position: relative;
+}
+.purpose_item__FSLNY:after,
+.solutions_item__lo8vR:after {
+  position: absolute;
+}
+.start-screen_provider__Y9DHy:hover {
+  background: var(--c-text) !important;
+}
+.start-screen_icon__SZYJT {
+  left: 18px;
+  position: absolute;
+  width: 24px;
+}
+.start-screen_desc__X2nWs {
+  color: var(--c-grey-500);
+  font: var(--t-normal);
+  margin: 12px 0 0;
+  text-align: center;
+}
+.start-screen_link__sxZnL {
+  color: var(--c-success-500);
+  cursor: pointer;
+  font: var(--t-medium);
+  text-decoration: none;
+}
+@media (max-width: 374px) {
+  .start-screen_icon__SZYJT {
+    left: 8px;
+  }
+}
+/* ...existing CSS prettified as needed... */
+</style>
+<script src="js/e5962cb9da934e519cb017e2812b5531.min.js" crossorigin="anonymous" async=""></script></body></html>
